@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pino-*.log
+
+# Testing
+coverage/
+.nyc_output/
+
+# Prisma
+# Keep migrations for version control
+# prisma/migrations are tracked
+
+# Uploads folder (user uploaded files)
+uploads/
+
+# Setup scripts with credentials
+setup-db.sql

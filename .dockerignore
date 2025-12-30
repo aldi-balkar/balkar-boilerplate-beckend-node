@@ -1,0 +1,45 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build
+dist
+build
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Documentation (optional, comment out if you want to include)
+README.md
+DEPLOYMENT.md
+QUICKSTART.md
+STRUCTURE.md
+
+# Tests
+*.test.ts
+*.spec.ts
+__tests__
+
+# Development files
+.prettierrc
+eslint.config.mjs
+tsconfig.json
+
+# Logs
+logs
+*.log
