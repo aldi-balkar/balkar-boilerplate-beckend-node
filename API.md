@@ -39,8 +39,9 @@ Create a new user account.
 **Success Response (201):**
 ```json
 {
-  "success": true,
-  "message": "User registered successfully",
+  "responCode": "01000001",
+  "responMessage": "User registered successfully",
+  "status": "Operation completed successfully",
   "data": {
     "user": {
       "id": "clxyz123...",
@@ -56,8 +57,9 @@ Create a new user account.
 **Error Response (409):**
 ```json
 {
-  "success": false,
-  "message": "Email or username already exists"
+  "responCode": "15000001",
+  "responMessage": "Email or username already exists",
+  "status": "Resource already exists"
 }
 ```
 
@@ -82,8 +84,9 @@ Authenticate and receive access & refresh tokens.
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "Login successful",
+  "responCode": "01000001",
+  "responMessage": "Login successful",
+  "status": "Operation completed successfully",
   "data": {
     "accessToken": "eyJhbGciOiJIUzI1NiIs...",
     "refreshToken": "eyJhbGciOiJIUzI1NiIs...",
@@ -100,8 +103,9 @@ Authenticate and receive access & refresh tokens.
 **Error Response (401):**
 ```json
 {
-  "success": false,
-  "message": "Invalid credentials"
+  "responCode": "18210001",
+  "responMessage": "Invalid email or password",
+  "status": "Authentication failed"
 }
 ```
 
@@ -125,8 +129,9 @@ Get new access token using refresh token.
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "Token refreshed successfully",
+  "responCode": "01000001",
+  "responMessage": "Token refreshed successfully",
+  "status": "Operation completed successfully",
   "data": {
     "accessToken": "eyJhbGciOiJIUzI1NiIs...",
     "refreshToken": "eyJhbGciOiJIUzI1NiIs..."
@@ -154,8 +159,9 @@ Revoke refresh token.
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "Logout successful"
+  "responCode": "01000001",
+  "responMessage": "Logout successful",
+  "status": "Operation completed successfully"
 }
 ```
 
@@ -181,8 +187,9 @@ Get current user's profile.
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "Profile retrieved successfully",
+  "responCode": "01000001",
+  "responMessage": "Profile retrieved successfully",
+  "status": "Operation completed successfully",
   "data": {
     "user": {
       "id": "clxyz123...",
@@ -222,8 +229,9 @@ GET /users?page=1&limit=10&role=USER&search=john
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "Users retrieved successfully",
+  "responCode": "01000001",
+  "responMessage": "Users retrieved successfully",
+  "status": "Operation completed successfully",
   "data": {
     "users": [
       {
@@ -257,8 +265,9 @@ Get specific user details.
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "User retrieved successfully",
+  "responCode": "01000001",
+  "responMessage": "User retrieved successfully",
+  "status": "Operation completed successfully",
   "data": {
     "user": {
       "id": "clxyz123...",
@@ -294,8 +303,9 @@ Create a new user.
 **Success Response (201):**
 ```json
 {
-  "success": true,
-  "message": "User created successfully",
+  "responCode": "02000001",
+  "responMessage": "User created successfully",
+  "status": "Resource created successfully",
   "data": {
     "user": {
       "id": "clxyz456...",
@@ -338,8 +348,9 @@ Update user information.
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "User updated successfully",
+  "responCode": "01000001",
+  "responMessage": "User updated successfully",
+  "status": "Operation completed successfully",
   "data": {
     "user": {
       "id": "clxyz123...",
@@ -366,8 +377,9 @@ Delete a user.
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "User deleted successfully"
+  "responCode": "01000001",
+  "responMessage": "User deleted successfully",
+  "status": "Operation completed successfully"
 }
 ```
 
@@ -407,8 +419,9 @@ GET /posts?page=1&limit=10&published=true&sortBy=createdAt&sortOrder=desc
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "Posts retrieved successfully",
+  "responCode": "01000001",
+  "responMessage": "Posts retrieved successfully",
+  "status": "Operation completed successfully",
   "data": {
     "posts": [
       {
@@ -454,8 +467,9 @@ Get specific post details.
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "Post retrieved successfully",
+  "responCode": "01000001",
+  "responMessage": "Post retrieved successfully",
+  "status": "Operation completed successfully",
   "data": {
     "post": {
       "id": "clxyz789...",
@@ -502,8 +516,9 @@ Create a new post.
 **Success Response (201):**
 ```json
 {
-  "success": true,
-  "message": "Post created successfully",
+  "responCode": "02000001",
+  "responMessage": "Post created successfully",
+  "status": "Resource created successfully",
   "data": {
     "post": {
       "id": "clxyz789...",
@@ -551,8 +566,9 @@ Update existing post.
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "Post updated successfully",
+  "responCode": "01000001",
+  "responMessage": "Post updated successfully",
+  "status": "Operation completed successfully",
   "data": {
     "post": {
       "id": "clxyz789...",
@@ -587,8 +603,9 @@ Soft delete a post.
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "Post deleted successfully"
+  "responCode": "01000001",
+  "responMessage": "Post deleted successfully",
+  "status": "Operation completed successfully"
 }
 ```
 
@@ -613,8 +630,9 @@ Get current user's activity logs.
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "Your audit logs retrieved successfully",
+  "responCode": "01000001",
+  "responMessage": "Your audit logs retrieved successfully",
+  "status": "Operation completed successfully",
   "data": {
     "logs": [
       {
@@ -664,8 +682,9 @@ GET /audit-logs?action=LOGIN&entity=User&startDate=2024-01-01T00:00:00Z
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "Audit logs retrieved successfully",
+  "responCode": "01000001",
+  "responMessage": "Audit logs retrieved successfully",
+  "status": "Operation completed successfully",
   "data": {
     "logs": [
       {
@@ -708,8 +727,9 @@ Check API health and database connectivity.
 **Success Response (200):**
 ```json
 {
-  "success": true,
-  "message": "Service is healthy",
+  "responCode": "01000001",
+  "responMessage": "Service is healthy",
+  "status": "Operation completed successfully",
   "data": {
     "status": "ok",
     "timestamp": "2024-01-01T00:00:00.000Z",
@@ -724,8 +744,9 @@ Check API health and database connectivity.
 **Error Response (503):**
 ```json
 {
-  "success": false,
-  "message": "Service unavailable"
+  "responCode": "07000001",
+  "responMessage": "Service unavailable",
+  "status": "Internal server error"
 }
 ```
 
@@ -737,8 +758,9 @@ All errors follow this format:
 
 ```json
 {
-  "success": false,
-  "message": "Error description",
+  "responCode": "07000001",
+  "responMessage": "Error description",
+  "status": "Internal server error",
   "errors": {} // Optional, for validation errors
 }
 ```
@@ -760,16 +782,17 @@ All errors follow this format:
 
 ```json
 {
-  "success": false,
-  "message": "Validation failed",
+  "responCode": "10220001",
+  "responMessage": "Validation failed",
+  "status": "Validation failed",
   "errors": [
     {
       "field": "body.email",
-      "message": "Invalid email address"
+      "responMessage": "Invalid email address"
     },
     {
       "field": "body.password",
-      "message": "Password must be at least 8 characters"
+      "responMessage": "Password must be at least 8 characters"
     }
   ]
 }
@@ -779,8 +802,9 @@ All errors follow this format:
 
 ```json
 {
-  "success": false,
-  "message": "Too many login attempts, please try again after a minute"
+  "responCode": "07000001",
+  "responMessage": "Too many login attempts, please try again after a minute",
+  "status": "Internal server error"
 }
 ```
 
